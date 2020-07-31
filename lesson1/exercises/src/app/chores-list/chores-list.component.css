@@ -1,0 +1,13 @@
+.chores {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: Large;
+    color: rgb(48, 74, 160)
+}
+
+#chores-heading {
+text-decoration: underline;
+}
+
+.chores-list {
+    font-style: italic;
+}
