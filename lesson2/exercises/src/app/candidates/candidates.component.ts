@@ -17,12 +17,6 @@ export class CandidatesComponent implements OnInit {
   ];
 
   crew = [];
-  
-  addToCrew(member) {
-    if (!this.crew.includes(member)) {
-      this.crew.push(member)
-    }
-  }
 
   constructor() { }
 
@@ -30,9 +24,15 @@ export class CandidatesComponent implements OnInit {
   }
 
   // Code the addToCrew function here:
-
+  addToCrew(member: string) {
+    if (!this.crew.includes(member)) {
+      this.crew.push(member)
+    }
+  }
 
   // BONUS: Code the changeMissionName function here:
-
+  changeMissionName(entry: string) {
+    this.missionName = entry;
+  }
 
 }
