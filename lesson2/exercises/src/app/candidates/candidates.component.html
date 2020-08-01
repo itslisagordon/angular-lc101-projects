@@ -46,6 +46,6 @@
     <h2 class="centered">
         Mission Name:
         <!-- Add a keyup.enter event that calls the changeMissionName function. -->
-        <input (keyup.enter) = "changeMissionName(newName)" #newName type="text"/>
+        <input (keyup.enter) = "editMissionName = changeMissionName(newName.value)" #newName type="text"/>
     </h2>
 </ng-template>
