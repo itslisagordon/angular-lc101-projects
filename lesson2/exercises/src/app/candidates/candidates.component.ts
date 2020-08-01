@@ -19,8 +19,8 @@ export class CandidatesComponent implements OnInit {
   crew = [];
   
   addToCrew(member) {
-    if (member !== selected) {
-      crew.push(member);
+    if (!this.crew.includes(member)) {
+      this.crew.push(member)
     }
   }
 
